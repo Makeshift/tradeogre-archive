@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  tradeogre_archive:
+    image: makeshift/tradeogre_archive
+    build: .
+    restart: always
+    environment:
+      outputFile: /outputs/markets.json
+    volumes:
+      - ./outputs:/outputs
