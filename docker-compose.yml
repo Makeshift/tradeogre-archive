@@ -6,6 +6,7 @@ services:
     build: .
     restart: always
     environment:
-      outputFile: /outputs/markets.json
+      outputPrefix: /outputs/
+      orderList: LTC-XLA,BTC-DOGE
     volumes:
       - ./outputs:/outputs
